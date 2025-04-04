@@ -1,0 +1,20 @@
+<label>
+  <span>{{localize "VAGABOND.Roll.Power.Modifier.Favors"}}</span>
+  <select name="edges">
+    {{selectOptions modChoices selected=edges}}
+  </select>
+</label>
+<label>
+  <span>{{localize "VAGABOND.Roll.Power.Modifier.Hinders"}}</span>
+  <select name="banes">
+    {{selectOptions modChoices selected=banes}}
+  </select>
+</label>
+{{#if skills}}
+<label>
+  <span>{{localize "VAGABOND.Actor.Character.FIELDS.hero.skills.label"}}</span>
+  <select name="skills">
+    {{selectOptions skills blank=(localize "None")}}
+  </select>
+</label>
+{{/if}}

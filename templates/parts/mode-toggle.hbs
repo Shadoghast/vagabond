@@ -1,0 +1,6 @@
+<div class="mode-toggle flexrow">
+  <span class="label play {{ifThen isPlay "active" ""}}">{{localize "VAGABOND.Sheet.Play"}}</span>
+  <slide-toggle class="mode-slider" data-action="toggleMode" {{checked (not isPlay)}}>
+  </slide-toggle>
+  <span class="label edit {{ifThen isPlay "" "active"}}">{{localize "VAGABOND.Sheet.Edit"}}</span>
+</div>

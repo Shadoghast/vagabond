@@ -1,0 +1,35 @@
+:root {
+  --vagabond-c-dark: #191813;
+  --vagabond-c-faint: #c9c7b8;
+  --vagabond-c-beige: #b5b3a4;
+  --vagabond-c-tan: #444444;
+  --vagabond-c-white: #ffffff;
+  --vagabond-c-black: #000000;
+  --vagabond-c-groove: #eeede0;
+  --vagabond-c-success: green;
+  --vagabond-c-failure: red;
+  --vagabond-c-item-header-bg: #bebbab;
+  --vagabond-c-item-alternating-bg: rgba(0, 0, 0, .05);
+}
+
+.theme-dark {
+  --vagabond-c-dark: #c9c7b8;
+  --vagabond-c-faint: #191813;
+  --vagabond-c-beige: #444444;
+  --vagabond-c-tan: #b5b3a4;
+  --vagabond-c-white: #000000;
+  --vagabond-c-black: #ffffff;
+  --vagabond-c-groove: #11121f;
+  --vagabond-c-item-header-bg: #28232f;
+  --vagabond-c-item-alternating-bg: rgba(255, 255, 255, .05);
+}
+
+$c-white: var(--vagabond-c-white);
+$c-black: var(--vagabond-c-black);
+
+$c-dark: var(--vagabond-c-dark);
+$c-faint: var(--vagabond-c-faint);
+$c-beige: var(--vagabond-c-beige);
+$c-tan: var(--vagabond-c-tan);
+
+$c-groove: var(--vagabond-c-groove);

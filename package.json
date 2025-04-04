@@ -1,0 +1,34 @@
+{
+  "name": "vagabond",
+  "version": "0.01.01",
+  "description": "The Vagabond system by Lands of the Blind for Foundry Virtual Tabletop",
+  "scripts": {
+    "createSymlinks": "node ./tools/create-symlinks.mjs",
+    "pullJSONtoLDB": "node ./tools/pullJSONtoLDB.mjs",
+    "pushLDBtoJSON": "node ./tools/pushLDBtoJSON.mjs",
+    "unpack": "npm run pushLDBtoJSON",
+    "build": "npm run build:packs && npm run build:css && npm run build:code",
+    "build:packs": "npm run pullJSONtoLDB",
+    "build:css": "sass src/scss/vagabond.scss css/vagabond.css --style=expanded --no-source-map",
+    "build:css:watch": "sass src/scss/vagabond.scss css/vagabond.css --style=expanded --source-map --watch",
+    "build:code": "rollup -c --sourcemap",
+    "lint": "eslint src/module/**.mjs",
+    "lint:fix": "eslint --fix src/module/**.mjs",
+    "postinstall": "npm run build:css && npm run createSymlinks",
+    "prepareRelease": "npm run build:packs && npm run build:code"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "author": "Dan Weiss",
+  "private": true,
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "@html-eslint/eslint-plugin": "^0.26.0",
+    "@html-eslint/parser": "^0.26.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^8.57.0",
+    "rollup": "^4.9.1",
+    "sass": "^1.53.0"
+  }
+}

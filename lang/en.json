@@ -1,0 +1,1347 @@
+{
+  "VAGABOND": {
+    "Sheet": {
+      "Labels": {
+        "Character": "Vagabond Character Sheet",
+        "NPC": "Vagabond NPC Sheet",
+        "Item": "Vagabond Item Sheet",
+        "ActiveEffect": "Vagabond Active Effect Config"
+      },
+      "Add": "+ Add {itemName}",
+      "Play": "Play",
+      "Edit": "Edit",
+      "Resources": "Resources",
+      "Other": "Other"
+    },
+    "Source": {
+      "FIELDS": {
+        "source": {
+          "label": "Source",
+          "book": {
+            "label": "Book"
+          },
+          "license": {
+            "label": "License"
+          },
+          "page": {
+            "label": "Page/Section"
+          },
+          "revision": {
+            "label": "Revision"
+          },
+          "uuid": {
+            "label": "Original Source"
+          }
+        }
+      },
+      "UpdateTitle": "Update Source Information",
+      "Display": {
+        "Full": "{book} {page}",
+        "Page": "pg. {page}"
+      }
+    },
+    "Actor": {
+      "Tabs": {
+        "biography": "Biography",
+        "features": "Features",
+        "equipment": "Equipment",
+        "stats": "Stats",
+        "abilities": "Abilities",
+        "effects": "Effects"
+      },
+      "characteristics": {
+        "might": {
+          "abbreviation": "M",
+          "full": "Might"
+        },
+        "agility": {
+          "abbreviation": "A",
+          "full": "Agility"
+        },
+        "reason": {
+          "abbreviation": "R",
+          "full": "Reason"
+        },
+        "intuition": {
+          "abbreviation": "I",
+          "full": "Intuition"
+        },
+        "presence": {
+          "abbreviation": "P",
+          "full": "Presence"
+        }
+      },
+      "base": {
+        "FIELDS": {
+          "biography": {
+            "value": {
+              "label": "Biography"
+            },
+            "gm": {
+              "label": "GM Notes"
+            },
+            "languages": {
+              "label": "Languages"
+            }
+          },
+          "characteristics": {
+            "label": "Characteristics"
+          },
+          "stamina": {
+            "label": "Stamina",
+            "value": {
+              "label": "Current"
+            },
+            "max": {
+              "label": "Max"
+            },
+            "temporary": {
+              "label": "Temporary"
+            }
+          },
+          "combat": {
+            "label": "Combat",
+            "size": {
+              "label": "Size",
+              "value": {
+                "label": "Size Number"
+              }
+            },
+            "stability": {
+              "label": "Stability"
+            },
+            "turns": {
+              "label": "Turns Per Round"
+            }
+          },
+          "movement": {
+            "label": "Movement",
+            "walk": {
+              "label": "Walk"
+            },
+            "burrow": {
+              "label": "Burrow"
+            },
+            "climb": {
+              "label": "Climb"
+            },
+            "swim": {
+              "label": "Swim"
+            },
+            "fly": {
+              "label": "Fly"
+            },
+            "teleport": {
+              "label": "Teleport"
+            }
+          },
+          "damage": {
+            "immunities": {
+              "label": "Immunities",
+              "all": {
+                "label": "Damage"
+              },
+              "format": "{type} Immunity"
+            },
+            "weaknesses": {
+              "label": "Weaknesses",
+              "all": {
+                "label": "Damage"
+              },
+              "format": "{type} Weakness"
+            }
+          }
+        },
+        "sizes": {
+          "T": "Tiny",
+          "S": "Small",
+          "M": "Medium",
+          "L": "Large"
+        }
+      },
+      "Character": {
+        "FIELDS": {
+          "hero": {
+            "primary": {
+              "value": {
+                "label": "Heroic Resource"
+              }
+            },
+            "surges": {
+              "label": "Surges"
+            },
+            "xp": {
+              "label": "XP"
+            },
+            "recoveries": {
+              "label": "Recoveries",
+              "value": {
+                "label": "Current"
+              },
+              "max": {
+                "label": "Max"
+              }
+            },
+            "victories": {
+              "label": "Victories"
+            },
+            "renown": {
+              "label": "Renown"
+            },
+            "skills": {
+              "label": "Skills"
+            }
+          },
+          "biography": {
+            "value": {
+              "label": "Biography"
+            },
+            "gm": {
+              "label": "GM Notes"
+            },
+            "languages": {
+              "label": "Languages"
+            },
+            "height": {
+              "value": {
+                "label": "Height"
+              }
+            },
+            "weight": {
+              "value": {
+                "label": "Weight"
+              }
+            }
+          }
+        },
+        "HeroicResourceGain": "Start of turn resource gain"
+      },
+      "NPC": {
+        "FIELDS": {
+          "negotiation": {
+            "label": "Negotiation",
+            "interest": {
+              "label": "Interest"
+            },
+            "patience": {
+              "label": "Patience"
+            },
+            "motivations": {
+              "label": "Motivations"
+            },
+            "pitfalls": {
+              "label": "Pitfalls"
+            },
+            "impression": {
+              "label": "Impression"
+            }
+          },
+          "monster": {
+            "freeStrike": {
+              "label": "Free Strike"
+            },
+            "keywords": {
+              "label": "Keywords"
+            },
+            "level": {
+              "label": "Level"
+            },
+            "ev": {
+              "label": "Encounter Value"
+            },
+            "role": {
+              "label": "Creature Role"
+            },
+            "organization": {
+              "label": "Monster Organization"
+            }
+          }
+        },
+        "MonsterMetadata": {
+          "DialogTitle": "Update Monster Metadata"
+        },
+        "EVLabel": {
+          "Minion": "EV {value} for eight minions",
+          "Other": "EV {value}"
+        },
+        "KEYWORDS": {
+          "Abyssal": "Abyssal",
+          "Accursed": "Accursed",
+          "Animal": "Animal",
+          "Beast": "Beast",
+          "Construct": "Construct",
+          "Dragon": "Dragon",
+          "Elemental": "Elemental",
+          "Fey": "Fey",
+          "Giant": "Giant",
+          "Horror": "Horror",
+          "Humanoid": "Humanoid",
+          "Infernal": "Infernal",
+          "Plant": "Plant",
+          "Swarm": "Swarm",
+          "Undead": "Undead"
+        },
+        "KeywordGroups": {
+          "General": "General"
+        },
+        "ROLES": {
+          "Ambusher": "Ambusher",
+          "Artillery": "Artillery",
+          "Brute": "Brute",
+          "Controller": "Controller",
+          "Defender": "Defender",
+          "Harrier": "Harrier",
+          "Hexer": "Hexer",
+          "Mount": "Mount",
+          "Support": "Support"
+        },
+        "ORGANIZATIONS": {
+          "Band": "Band",
+          "Leader": "Leader",
+          "Minion": "Minion",
+          "Platoon": "Platoon",
+          "Solo": "Solo",
+          "Troop": "Troop"
+        },
+        "Negotiation": {
+          "Motivations": {
+            "Benevolence": "Benevolence",
+            "Discovery": "Discovery",
+            "Freedom": "Freedom",
+            "Greed": "Greed",
+            "HigherAuthority": "Higher Authority",
+            "Justice": "Justice",
+            "Legacy": "Legacy",
+            "Peace": "Peace",
+            "Power": "Power",
+            "Protection": "Protection",
+            "Revelry": "Revelry",
+            "Vengeance": "Vengeance"
+          }
+        },
+        "FreeStrike": {
+          "NoTargets": "Select one or more targets to make a free strike!",
+          "DialogHeader": "{value} {type} Damage",
+          "DialogTitle": "Free Strike",
+          "DialogButton": "Deal Damage"
+        }
+      },
+      "DamageNotification": {
+        "ImmunityReducedToZero": "{name}'s immunities have reduced the damage to zero."
+      }
+    },
+    "Combat": {
+      "Initiative": {
+        "Modes": {
+          "Label": "Initiative Mode",
+          "Hint": "Default is each side choose who goes next, alternative uses an agility test to set the order",
+          "Default": "Default",
+          "Alternative": "Alternative"
+        },
+        "Actions": {
+          "RollFirst": {
+            "Tooltip": "Roll a d10 to determine which side goes first",
+            "Heroes": "Heroes Go First!",
+            "Enemies": "Enemies Go First!"
+          },
+          "Act": "Act",
+          "Restore": "Restore Action"
+        }
+      },
+      "base": {
+        "FIELDS": {}
+      }
+    },
+    "Combatant": {
+      "base": {
+        "FIELDS": {
+          "disposition": {
+            "label": "Disposition",
+            "blank": "Match Token"
+          }
+        }
+      }
+    },
+    "Item": {
+      "Tabs": {
+        "Attributes": "Attributes",
+        "Description": "Description",
+        "Details": "Details",
+        "Advancement": "Advancement",
+        "Effects": "Effects"
+      },
+      "base": {
+        "FIELDS": {
+          "description": {
+            "value": {
+              "label": "Description"
+            },
+            "gm": {
+              "label": "GM Notes"
+            }
+          },
+          "_dsid": {
+            "label": "DSID",
+            "hint": "Vagabond ID"
+          }
+        },
+        "share": "Share"
+      },
+      "advancement": {
+        "FIELDS": {}
+      },
+      "Ability": {
+        "FIELDS": {
+          "description": {
+            "flavor": {
+              "label": "Story Text"
+            },
+            "value": {
+              "label": "Description"
+            },
+            "gm": {
+              "label": "GM Notes"
+            }
+          },
+          "keywords": {
+            "label": "Keywords"
+          },
+          "type": {
+            "label": "Type"
+          },
+          "category": {
+            "label": "Category"
+          },
+          "resource": {
+            "label": "Resource Cost"
+          },
+          "distance": {
+            "label": "Distance",
+            "type": {
+              "label": "Type"
+            }
+          },
+          "damageDisplay": {
+            "label": "Damage Display"
+          },
+          "trigger": {
+            "label": "Trigger"
+          },
+          "target": {
+            "label": "Target",
+            "type": {
+              "label": "Type"
+            },
+            "value": {
+              "label": "Value"
+            }
+          },
+          "powerRoll": {
+            "label": "Power Roll",
+            "enabled": {
+              "label": "Has Power Roll"
+            },
+            "formula": {
+              "label": "Roll Bonus"
+            },
+            "characteristics": {
+              "label": "Characteristics"
+            },
+            "tier": {
+              "type": {
+                "label" : "Effect Type"
+              },
+             "potency": {
+                "label": "Potency",
+                "enabled": {
+                  "label": "Has Potency"
+                },
+                "characteristic": {
+                  "label": "Potency Characteristic"
+                },
+                "value": {
+                  "label": "Potency Value"
+                }
+              },
+              "display": {
+                "label": "Display Text",
+                "hint": "{{potency}} will be replaced with the derived potency info (i.e M<2). {{damage}} will be replaced with the derived damage number based on kits and other effects."
+              },
+              "damage": {
+                "label": "Damage",
+                "types": {
+                  "label": "Damage Types"
+                },
+                "value": {
+                  "label": "Damage Formula"
+                }
+              },
+              "ae": {
+                "label": "Applied Effects",
+                "always": {
+                  "label": "Applied Effects"
+                },
+                "success": {
+                  "label": "Potency Success Effects"
+                },
+                "failure": {
+                  "label": "Potency Failure Effects"
+                }
+              },
+              "forced": {
+                "label": "Forced Movement",
+                "types": {
+                  "label": "Types"
+                },
+                "value": {
+                  "label": "Distance"
+                },
+                "vertical": {
+                  "label": "Vertical Movement"
+                }
+              },
+              "other": {
+                "label": "Other"
+              }
+            },
+            "tier1": {
+              "label": "Tier 1 Result",
+              "damage": {
+                "label": "Damage",
+                "type": {
+                  "label": "Effect Type"
+                },
+                "value": {
+                  "label": "Damage Formula"
+                },
+                "subtype": {
+                  "label": "Damage Type"
+                }
+              },
+              "ae": {
+                "label": "Applied Effects"
+              },
+              "potency": {
+                "enabled": {
+                  "label": "Has Potency"
+                },
+                "value": {
+                  "label": "Potency Value"
+                },
+                "label": "Potency"
+              },
+              "description": {
+                "label": "Description"
+              }
+            },
+            "tier2": {
+              "label": "Tier 2 Result",
+              "damage": {
+                "value": {
+                  "label": "Damage Formula"
+                },
+                "type": {
+                  "label": "Damage Type"
+                }
+              },
+              "ae": {
+                "label": "Applied Effects"
+              },
+              "potency": {
+                "enabled": {
+                  "label": "Has Potency"
+                },
+                "value": {
+                  "label": "Potency Value"
+                },
+                "label": "Potency"
+              },
+              "description": {
+                "label": "Description"
+              }
+            },
+            "tier3": {
+              "label": "Tier 3 Result",
+              "damage": {
+                "value": {
+                  "label": "Damage Formula"
+                },
+                "type": {
+                  "label": "Damage Type"
+                }
+              },
+              "ae": {
+                "label": "Applied Effects"
+              },
+              "potency": {
+                "enabled": {
+                  "label": "Has Potency"
+                },
+                "value": {
+                  "label": "Potency Value"
+                },
+                "label": "Potency"
+              },
+              "description": {
+                "label": "Description"
+              }
+            }
+          },
+          "effect": {
+            "label": "Effect"
+          },
+          "spend": {
+            "label": "Spend",
+            "value": {
+              "label": "Spend Cost"
+            },
+            "text": {
+              "label": "Spend Effect"
+            }
+          }
+        },
+        "ResourceCost": "Costs {value} {name}",
+        "ConfigureUse": {
+          "Title": "Configure Ability Use",
+          "SpendLabel": "Spend {value} {name}",
+          "SpentFlavor": "Spent {value} {name}"
+        },
+        "KeywordGroups": {
+          "Elementalist": "Elementalist",
+          "Fury": "Fury",
+          "Talent": "Talent",
+          "Troubador": "Troubador"
+        },
+        "Keywords": {
+          "Animal": "Animal",
+          "Animapathy": "Animapathy",
+          "Area": "Area",
+          "Charge": "Charge",
+          "Chronopathy": "Chronopathy",
+          "Cryokinesis": "Cryokinesis",
+          "Earth": "Earth",
+          "Fire": "Fire",
+          "Green": "Green",
+          "Magic": "Magic",
+          "Melee": "Melee",
+          "Metamorphosis": "Metamorphosis",
+          "Psionic": "Psionic",
+          "Pyrokinesis": "Pyrokinesis",
+          "Ranged": "Ranged",
+          "Resopathy": "Resopathy",
+          "Rot": "Rot",
+          "Routine": "Routine",
+          "Strike": "Strike",
+          "Telekinesis": "Telekinesis",
+          "Telepathy": "Telepathy",
+          "Void": "Void",
+          "Weapon": "Weapon"
+        },
+        "Type": {
+          "Action": "Action",
+          "Maneuver": "Maneuver",
+          "FreeManeuver": "Free Maneuver",
+          "Triggered": "Triggered Action",
+          "FreeTriggered": "Free Triggered Action",
+          "Villain": "Villain Action"
+        },
+        "Category": {
+          "Heroic": "Heroic Ability",
+          "FreeStrike": "Free Strike",
+          "Signature": "Signature Ability",
+          "Villain": "Villain Action"
+        },
+        "Distance": {
+          "Melee": "Melee",
+          "Ranged": "Ranged",
+          "MeleeRanged": "Melee or Ranged",
+          "Aura": "Aura",
+          "Burst": "Burst",
+          "Cube": "Cube",
+          "Line": "Line",
+          "Length": "Length",
+          "Width": "Width",
+          "Wall": "Wall",
+          "Squares": "Squares",
+          "Special": "Special",
+          "Self": "Self"
+        },
+        "DistanceEmbed": {
+          "Melee": "Melee {primary}",
+          "Ranged": "Ranged {primary}",
+          "MeleeRanged": "Melee {primary} or ranged {secondary}",
+          "Aura": "Aura {primary}",
+          "Burst": "Burst {primary}",
+          "Cube": "Cube {primary} within {secondary}",
+          "Line": "{primary} x {secondary} line within {tertiary}",
+          "Wall": "{primary} wall within {secondary}"
+        },
+        "Target": {
+          "All": "All",
+          "Creature": "Creature",
+          "CreatureEmbed": "{value} creature(s)",
+          "AllCreatures": "All creatures",
+          "Object": "Object",
+          "ObjectEmbed": "{value} object(s)",
+          "AllObjects": "All objects",
+          "CreatureObject": "Creature or Object",
+          "CreatureObjectEmbed": "{value} creature(s) or object(s)",
+          "AllCreatureObject": "All creatures and objects",
+          "Enemy": "Enemy",
+          "EnemyEmbed": "{value} enemies",
+          "AllEnemies": "All enemies",
+          "Ally": "Ally",
+          "AllyEmbed": "{value} allies",
+          "AllAllies": "All allies",
+          "Self": "Self"
+        },
+        "DamageFlavor": "{type} Damage",
+        "ForcedMovement": {
+          "Push": "Push",
+          "PushX": "Push {x}",
+          "Pull": "Pull",
+          "PullX": "Pull {x}",
+          "Slide": "Slide",
+          "SlideX": "Slide {x}",
+          "Vertical": "Vertical"
+        },
+        "EmbedFail": "Failed to find item for this ability roll",
+        "Potency": {
+          "label": "Potency",
+          "Weak": "Weak",
+          "Average": "Average",
+          "Strong": "Strong",
+          "Embed": "{characteristic} < {value}",
+          "Success": "Success",
+          "Failure": "Failure"
+        },
+        "Restricted": "A condition or ability effect is restricting the usage of this ability.",
+        "AddTierEffect": "Add Tier Effect",
+        "RemoveTierEffect": "Remove Tier Effect",
+        "Order": "Order",
+        "SwapUsage": {
+          "ToMelee": "Swap to Melee Usage",
+          "ToRanged": "Swap to Ranged Usage"
+        }
+      },
+      "Ancestry": {
+        "FIELDS": {}
+      },
+      "Career": {
+        "FIELDS": {
+          "renown": {
+            "label": "Renown"
+          },
+          "projectPoints": {
+            "label": "Project Points"
+          }
+        }
+      },
+      "Class": {
+        "FIELDS": {
+          "level": {
+            "label": "Level"
+          },
+          "primary": {
+            "label": "Heroic Resource"
+          },
+          "turnGain": {
+            "label": "Gain Per Turn"
+          },
+          "characteristics": {
+            "core": {
+              "label": "Core Characteristics"
+            }
+          },
+          "stamina": {
+            "starting": {
+              "label": "Starting Stamina"
+            },
+            "level": {
+              "label": "Stamina Per Level"
+            }
+          },
+          "recoveries": {
+            "label": "Recoveries"
+          },
+          "kits": {
+            "label": "Kits"
+          }
+        }
+      },
+      "Complication": {
+        "FIELDS": {}
+      },
+      "Culture": {
+        "FIELDS": {},
+        "Environments": {
+          "Nomadic": "Nomadic",
+          "Rural": "Rural",
+          "Secluded": "Secluded",
+          "Urban": "Urban",
+          "Wilderness": "Wilderness"
+        },
+        "Organization": {
+          "Anarchic": "Anarchic",
+          "Bureaucratic": "Bureaucratic",
+          "Communal": "Communal"
+        },
+        "Upbringing": {
+          "Academic": "Academic",
+          "Creative": "Creative",
+          "Illegal": "Illegal",
+          "Labor": "Labor",
+          "Martial": "Martial",
+          "Noble": "Noble"
+        }
+      },
+      "Equipment": {
+        "FIELDS": {
+          "kind": {
+            "label": "Kind"
+          },
+          "category": {
+            "label": "Category"
+          },
+          "echelon": {
+            "label": "Echelon"
+          },
+          "keywords": {
+            "label": "Keywords"
+          },
+          "project": {
+            "label": "Project",
+            "prerequisites": {
+              "label": "Item Prerequisites"
+            },
+            "source": {
+              "label": "Project Source"
+            },
+            "rollCharacteristic": {
+              "label": "Roll Characteristic"
+            },
+            "goal": {
+              "label": "Project Goal"
+            },
+            "yield": {
+              "amount": {
+                "label": "Yield Amount"
+              },
+              "display": {
+                "label": "Yield Display"
+              }
+            }
+          }
+        },
+        "Categories": {
+          "Consumable": "Consumable",
+          "Trinket": "Trinket",
+          "Leveled": "Leveled",
+          "Artifact": "Artifact"
+        },
+        "Kinds": {
+          "Other": "Other",
+          "Armor": "Armor",
+          "Implement": "Implement",
+          "Weapon": "Weapon"
+        },
+        "Armor": {
+          "None": "None",
+          "Light": "Light",
+          "Medium": "Medium",
+          "Heavy": "Heavy",
+          "Shield": "Shield"
+        },
+        "Weapons": {
+          "None": "None",
+          "Bow": "Bow",
+          "Ensnaring": "Ensnaring",
+          "Heavy": "Heavy",
+          "Light": "Light",
+          "Medium": "Medium",
+          "Polearm": "Polearm",
+          "Unarmed": "Unarmed",
+          "Whip": "Whip"
+        },
+        "Implements": {
+          "Bone": "Bone",
+          "Crystal": "Crystal",
+          "Glass": "Glass",
+          "Metal": "Metal",
+          "Stone": "Stone",
+          "Wood": "Wood"
+        },
+        "Other": {
+          "Feet": "Feet",
+          "Hands": "Hands",
+          "Neck": "Neck",
+          "Ring": "Ring"
+        }
+      },
+      "Feature": {
+        "FIELDS": {
+          "type": {
+            "value": {
+              "label": "Feature Type"
+            },
+            "subtype": {
+              "label": "Feature Subtype"
+            }
+          },
+          "prerequisites": {
+            "label": "Prerequisites",
+            "value": {
+              "label": "Description"
+            }
+          }
+        },
+        "Types": {
+          "Perk": {
+            "Label": "Perk",
+            "Crafting": "Crafting",
+            "Exploration": "Exploration",
+            "Interpersonal": "Interpersonal",
+            "Intrigue": "Intrigue",
+            "Lore": "Lore",
+            "Supernatural": "Supernatural"
+          },
+          "Title": {
+            "Label":"Title"
+          }
+        }
+      },
+      "Kit": {
+        "FIELDS": {
+          "type": {
+            "label": "Type"
+          },
+          "equipment": {
+            "label": "Kit Equipment",
+            "armor": {
+              "label": "Armor Category"
+            },
+            "weapon": {
+              "label": "Weapon Category"
+            },
+            "shield": {
+              "label": "Has Shield"
+            }
+          },
+          "bonuses": {
+            "label": "Kit Bonuses",
+            "stamina": {
+              "label": "Stamina Bonus"
+            },
+            "speed": {
+              "label": "Speed Bonus"
+            },
+            "stability": {
+              "label": "Stability Bonus"
+            },
+            "disengage": {
+              "label": "Disengage Bonus"
+            },
+            "melee": {
+              "damage": {
+                "label": "Melee Damage Bonus",
+                "tier1": {
+                  "label": "Tier 1"
+                },
+                "tier2": {
+                  "label": "Tier 2"
+                },
+                "tier3": {
+                  "label": "Tier 3"
+                }
+              },
+              "distance": {
+                "label": "Melee Distance Bonus"
+              }
+            },
+            "ranged": {
+              "damage": {
+                "label": "Ranged Damage Bonus",
+                "tier1": {
+                  "label": "Tier 1"
+                },
+                "tier2": {
+                  "label": "Tier 2"
+                },
+                "tier3": {
+                  "label": "Tier 3"
+                }
+              },
+              "distance": {
+                "label": "Ranged Distance Bonus"
+              }
+            }
+          }
+        },
+        "Types": {
+          "Martial": "Martial",
+          "Caster": "Caster"
+        },
+        "NotAllowedByClass": "The {class} class does not allow kits.",
+        "Swap": {
+          "Title": "Choose Kit to Replace",
+          "Button": "Confirm Kit Swap",
+          "Header": "{actor} already has the maximum number kits and must replace one. Choose which kit to replace with the {kit} kit."
+        },
+        "PreferredKit": {
+          "Label": "Preferred Kit",
+          "MakePreferred": "Make Preferred Kit"
+        },
+        "StaminaEmbed": "{number} per echelon"
+      },
+      "Project": {
+        "FIELDS": {
+          "prerequisites": {
+            "label": "Item Prerequisites"
+          },
+          "projectSource": {
+            "label": "Project Source"
+          },
+          "rollCharacteristic": {
+            "label": "Project Roll Characteristics"
+          },
+          "goal": {
+            "label": "Project Goal"
+          },
+          "progress": {
+            "label": "Project Progress"
+          },
+          "yield": {
+            "item": {
+              "label": "Yield Item UUID"
+            },
+            "amount": {
+              "label": "Yield Amount"
+            },
+            "display": {
+              "label": "Yield Display"
+            }
+          }
+        },
+        "CraftItemName": "Craft {name}"
+      }
+    },
+    "Effect": {
+      "Name": "Effect",
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects",
+      "Applied": "Applied Effects",
+      "Ends": {
+        "Label": "Ending Effects",
+        "Turn": {
+          "Label": "End of Turn",
+          "Abbr": "EoT"
+        },
+        "Save": {
+          "Label": "Save Ends",
+          "Abbr": "Save Ends"
+        },
+        "Encounter": {
+          "Label": "End of Encounter or Dying",
+          "Abbr": "EoE"
+        }
+      },
+      "Conditions": {
+        "Bleeding": {
+          "name": "Bleeding"
+        },
+        "Dazed": {
+          "name": "Dazed"
+        },
+        "Frightened": {
+          "name": "Frightened"
+        },
+        "Grabbed": {
+          "name": "Grabbed"
+        },
+        "Prone": {
+          "name": "Prone"
+        },
+        "Restrained": {
+          "name": "Restrained"
+        },
+        "Slowed": {
+          "name": "Slowed"
+        },
+        "Taunted": {
+          "name": "Taunted"
+        },
+        "Weakened": {
+          "name": "Weakened"
+        }
+      },
+      "TargetedConditionPrompt": {
+        "Title": "{condition} Configuration",
+        "Prompt": "Target the actor causing the {condition} condition",
+        "Warning": "An invalid UUID was provided.",
+        "Selected": "Currently Selected:",
+        "NoneSelected": "No actor has been selected as causing the {condition} condition",
+        "Choose": "Choose Actor"
+      },
+      "StaminaEffects": {
+        "Dying": "Dying",
+        "Winded": "Winded"
+      },
+      "base": {
+        "FIELDS": {
+          "end": {
+            "type": {
+              "label": "Vagabond Durations"
+            },
+            "roll": {
+              "label": "Saving Throw Formula"
+            }
+          }
+        }
+      }
+    },
+    "DamageTypes": {
+      "Acid": "Acid",
+      "Cold": "Cold",
+      "Corruption": "Corruption",
+      "Fire": "Fire",
+      "Holy": "Holy",
+      "Lightning": "Lightning",
+      "Poison": "Poison",
+      "Psychic": "Psychic",
+      "Sonic": "Sonic"
+    },
+    "Roll": {
+      "Prompt": "Roll {prompt}",
+      "Power": {
+        "Prompt": {
+          "Title": "{typeLabel} Power Roll",
+          "Total": "Total: {number}",
+          "GlobalModifiers": "Global Modifiers",
+          "DamageSelectionLabel": "Damage Type",
+          "Button": "Roll"
+        },
+        "Tiers": {
+          "One": "Tier 1",
+          "Two": "Tier 2",
+          "Three": "Tier 3"
+        },
+        "Results": {
+          "Tier1": "11 or lower",
+          "Tier2": "12–16",
+          "Tier3": "17+"
+        },
+        "Types": {
+          "Ability": "Ability Roll",
+          "Test": "Test"
+        },
+        "ChooseType": {
+          "Title": "Power Roll Type",
+          "Content": "Choose Power Roll Type."
+        },
+        "Modifier": {
+          "Favor": "Favor",
+          "Favors": "Favors",
+          "Hinder": "Hinder",
+          "Hinders": "Hinders",
+          "Bonuses": "Bonuses/Penalties",
+          "Label": "{number} {mod}"
+        },
+        "BaseRoll": "Base Power Roll"
+      },
+      "Project": {
+        "Label": "Project Roll",
+        "Breakthrough": "Breakthrough!"
+      },
+      "Save": {
+        "Label": "Saving Throw"
+      }
+    },
+    "Setting": {
+      "NoActiveGM": "This requires an active GM logged into the world.",
+      "HeroTokens": {
+        "Label": "Hero Tokens",
+        "Hint": "Hero tokens are a group resource that is tracked by the players and kept in a pool that is accessible to all their characters.",
+        "NoHeroTokens": "No Hero Tokens available",
+        "WarnDirectorBadSpend": "{name} attempted to spend a hero token while none were available.",
+        "GainSurges": {
+          "label": "Gain Surges",
+          "messageContent": "Spends a hero token to gain two surges.",
+          "dialogContent": "Spend one of {value} hero tokens to gain two surges."
+        },
+        "SucceedSave": {
+          "label": "Succeed on a Saving Throw",
+          "messageContent": "Spends a hero token to succeed on a saving throw instead of failing."
+        },
+        "ImproveTest": {
+          "label": "Improve Test Result",
+          "messageContent": "Spends a hero token to succeed on a test and lose any consequences suffered."
+        },
+        "RegainStamina": {
+          "label": "Regain Stamina",
+          "messageContent": "Spends two hero tokens to regain stamina equal to their recovery value."
+        }
+      },
+      "Malice": {
+        "Label": "Malice",
+        "Hint": "Malice is a resource gained by the Director. You use malice to let enemies in the game activate their most powerful abilities and throw surprises at the heroes during combat."
+      },
+      "MigrationVersion": {
+        "Label": "Migration Version",
+        "Hint": "Last Performed Migration"
+      }
+    },
+    "Skill": {
+      "Group": {
+        "Crafting": "Crafting",
+        "Exploration": "Exploration",
+        "Interpersonal": "Interpersonal",
+        "Intrigue": "Intrigue",
+        "Lore": "Lore"
+      },
+      "List": {
+        "Alchemy": "Alchemy",
+        "Architecture": "Architecture",
+        "Blacksmithing": "Blacksmithing",
+        "Fletching": "Fletching",
+        "Forgery": "Forgery",
+        "Jewelry": "Jewelry",
+        "Mechanics": "Mechanics",
+        "Tailoring": "Tailoring",
+        "Climb": "Climb",
+        "Drive": "Drive",
+        "Endurance": "Endurance",
+        "Gymnastics": "Gymnastics",
+        "Heal": "Heal",
+        "Jump": "Jump",
+        "Lift": "Lift",
+        "Navigate": "Navigate",
+        "Ride": "Ride",
+        "Swim": "Swim",
+        "Brag": "Brag",
+        "Empathize": "Empathize",
+        "Flirt": "Flirt",
+        "Gamble": "Gamble",
+        "HandleAnimals": "Handle Animals",
+        "Interrogate": "Interrogate",
+        "Intimidate": "Intimidate",
+        "Lead": "Lead",
+        "Lie": "Lie",
+        "Music": "Music",
+        "Perform": "Perform",
+        "Persuade": "Persuade",
+        "ReadPerson": "Read Person",
+        "Alertness": "Alertness",
+        "ConcealObject": "Conceal Object",
+        "Disguise": "Disguise",
+        "Eavesdrop": "Eavesdrop",
+        "EscapeArtist": "Escape Artist",
+        "Hide": "Hide",
+        "PickLock": "Pick Lock",
+        "PickPocket": "Pick Pocket",
+        "Sabotage": "Sabotage",
+        "Search": "Search",
+        "Sneak": "Sneak",
+        "Track": "Track",
+        "Culture": "Culture",
+        "CriminalUnderworld": "Criminal Underworld",
+        "History": "History",
+        "Magic": "Magic",
+        "Monsters": "Monsters",
+        "Nature": "Nature",
+        "Psionics": "Psionics",
+        "Religion": "Religion",
+        "Rumors": "Rumors",
+        "Society": "Society",
+        "Timescape": "Timescape"
+      }
+    },
+    "Languages": {
+      "Anjali": "Anjali",
+      "Axiomatic": "Axiomatic",
+      "Caelian": "Caelian",
+      "Filliaric": "Filliaric",
+      "Higaran": "Higaran",
+      "HighKuric": "High Kuric",
+      "HighRhyvian": "High Rhyvian",
+      "Hyrallic": "Hyrallic",
+      "Illyvric": "Illyvric",
+      "Kalliak": "Kalliak",
+      "Kethaic": "Kethaic",
+      "Khamish": "Khamish",
+      "Khelt": "Khelt",
+      "Kheltivari": "Kheltivari",
+      "Khemharic": "Khemharic",
+      "Khoursirian": "Khoursirian",
+      "LowKuric": "Low Kuric",
+      "LowRhivian": "Low Rhivian",
+      "Mindspeech": "Mindspeech",
+      "Oaxuatl": "Oaxuatl",
+      "OldVariac": "Old Variac",
+      "Phaedran": "Phaedran",
+      "Phorialtic": "Phorialtic",
+      "ProtoCtholl": "Proto-Ctholl",
+      "Rallarian": "Rallarian",
+      "Riojan": "Riojan",
+      "Szetch": "Szetch",
+      "TheFirstLanguage": "The First Language",
+      "Tholl": "Tholl",
+      "Ullorvic": "Ullorvic",
+      "Urollialic": "Urollialic",
+      "Uvalic": "Uvalic",
+      "Vaniric": "Vaniric",
+      "Variac": "Variac",
+      "Vasloria": "Vasloria",
+      "Vastariax": "Vastariax",
+      "Vhoric": "Vhoric",
+      "Voll": "Voll",
+      "Yllyric": "Yllyric",
+      "Zahariax": "Za'hariax",
+      "Zaliac": "Zaliac"
+    },
+    "Advancement": {
+      "Title": "Advancement"
+    },
+    "Echelon": {
+      "1": "1st Echelon",
+      "2": "2nd Echelon",
+      "3": "3rd Echelon",
+      "4": "4th Echelon"
+    },
+    "Messages": {
+      "AbilityUse": {
+        "Buttons": {
+          "ApplyDamage": {
+            "Label": "Apply {amount}{type} Damage",
+            "Tooltip": "Shift+Click: Halve Damage"
+          }
+        },
+        "NoTokenSelected": "You must have at least one token selected"
+      }
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "ability": "Ability",
+      "ancestry": "Ancestry",
+      "career": "Career",
+      "class": "Class",
+      "complication": "Complication",
+      "culture": "Culture",
+      "feature": "Feature",
+      "equipment": "Equipment",
+      "kit": "Kit",
+      "project": "Project"
+    }
+  },
+  "USER": {
+    "RoleAssistant": "Assistant Director",
+    "RoleGamemaster": "Director"
+  }
+}

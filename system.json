@@ -1,39 +1,109 @@
 {
-    "name":"vagabond",
-    "title": "Vagabond",
-    "description": "A system for playing Land of the Blind's TTRPG, Vagabond.",
-    "author": "Dan Weiss",
-    "version": "0.01",
-    "minimumCoreVersion": "12.0", 
-    "compatibleCoreVersion": "12.331",
-    "esmodules": [
-        "vagabond.js"
-    ],
-    "styles": [
-        "vagabond.css"
-    ],
-    "packs": [
-        {
-            "name": "vagabond",
-            "label": "Vagabond Compendium",
-            "type": "data",
-            "system": "vagabond",
-            "path": "packs/vagabond.db",
-            "entity": "Item"
-        }
-    ],
-    "languages": [
-        {
-            "lang": "en",
-            "name": "English",
-            "path": "lang/en.json"
-        }
-    ],
-    "gridDistance": 2,
-    "gridUnits": "m",
-    "primaryTokenAttibute": "hp",
-    "initiative": {
-        "formula": "1d20",
-        "formulaType": "roll"
+  "id": "vagabond",
+  "title": "Vagabond",
+  "description": "The Vagabond system by Land of the Blind, LLC for Foundry Virtual Tabletop",
+  "authors": [{
+    "name": "Dan W.",
+    "url": "https://forgottenlore.com/",
+    "discord": "shadoghast"
+  }],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": ["biography.value", "biography.gm"]
+      },
+      "npc": {
+        "htmlFields": ["biography.value", "biography.gm"]
+      }
+    },
+    "ChatMessage": {
+      "abilityUse": {}
+    },
+    "Item": {
+      "ability": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "ancestry": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "career": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "class": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "complication": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "culture": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "equipment": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "feature": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "kit": {
+        "htmlFields": ["description.value", "description.gm"]
+      },
+      "project": {
+        "htmlFields": ["description.value", "description.gm"]
+      }
     }
+  },
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json"],
+      "paths": ["css", "lang", "templates"]
+    }
+  },
+  "url": "https://github.com/Shadoghast/vagabond",
+  "license": "LICENSE.md",
+  "readme": "README.md",
+  "bugs": "https://github.com/Shadoghast/vagabond/issues",
+  "changelog": "CHANGELOG.md",
+  "media": [{
+    "type": "setup",
+    "url": "systems/vagabond/assets/anvil-impact.png",
+    "thumbnail": "systems/vagabond/assets/anvil-impact.png"
+  }],
+  "version": "0.7.0",
+  "compatibility": {
+    "minimum": "13.337",
+    "verified": "13.337"
+  },
+  "esmodules": ["vagabond.mjs"],
+  "styles": ["css/vagabond.css"],
+  "languages": [{
+    "lang": "en",
+    "name": "English",
+    "path": "lang/en.json"
+  }],
+  "packs": [
+    {
+      "name": "journals",
+      "label": "System Journals",
+      "type": "JournalEntry"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "vagabond System",
+      "color": "#483D8B",
+      "packs": ["journals"]
+    }
+  ],
+  "socket": true,
+  "manifest": "https://raw.githubusercontent.com/Shadoghast/vagabond/refs/heads/main/system.json",
+  "download": "https://github.com/Shadoghast/vagabond/releases/download/release-0.01.01/vagabond-release-0.01.01.zip",
+  "background": "systems/vagabond/assets/anvil-impact.png",
+  "grid": {
+    "type": 1,
+    "distance": 1,
+    "units": "sq",
+    "diagonals": 0
+  },
+  "primaryTokenAttribute": "hp",
+  "initiative": "1d20"
 }

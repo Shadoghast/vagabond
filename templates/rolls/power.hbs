@@ -1,0 +1,30 @@
+<div class="dice-roll" data-action="expandRoll">
+  <div class="header" data-uuid="{{target.uuid}}">
+    {{#if baseRoll}}
+    {{localize "VAGABOND.Roll.Power.BaseRoll"}}
+    {{else if target}}
+    {{target.name}}
+    {{/if}}
+  </div>
+
+  {{#unless baseRoll}}
+  <div class="tier {{tier.class}}">
+    {{tier.label}}
+    {{#if modifier.number}}
+    <em>({{localize "VAGABOND.Roll.Power.Modifier.Label" number=modifier.number mod=modifier.mod}})</em>
+    {{/if}}
+  </div>
+  {{/unless}}
+  {{#if flavor}}
+  <div class="dice-flavor">{{flavor}}</div>
+  {{/if}}
+  <div class="dice-result">
+    {{#if baseRoll}}
+    <div class="dice-formula">{{formula}}</div>
+    {{{tooltip}}}
+    {{/if}}
+    {{#unless baseRoll}}
+    <h4 class="dice-total {{critical}}">{{total}}</h4>
+    {{/unless}}
+  </div>
+</div>

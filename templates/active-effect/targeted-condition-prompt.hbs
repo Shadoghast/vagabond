@@ -1,0 +1,16 @@
+<div>
+  <div class="header">{{localize "VAGABOND.Effect.TargetedConditionPrompt.Prompt" condition=condition}}</div>
+  <div class="condition-target">
+    {{#if target}}
+    {{localize "VAGABOND.Effect.TargetedConditionPrompt.Selected"}} {{target.name}}
+    {{else}}
+    {{localize "VAGABOND.Effect.TargetedConditionPrompt.NoneSelected" condition=condition}}
+    {{/if}}
+  </div>
+  
+  <footer class="form-footer">
+    <button type="submit">
+      <i class="fa-solid fa-user"></i> {{localize "VAGABOND.Effect.TargetedConditionPrompt.Choose"}}
+    </button>
+  </footer>
+</div>

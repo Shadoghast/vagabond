@@ -1,0 +1,79 @@
+<div>
+  <div class="global group">
+    <div class="header">{{localize "VAGABOND.Roll.Power.Prompt.GlobalModifiers"}}</div>
+    <div class="modifiers general">
+      <label>
+        <span>{{localize "VAGABOND.Roll.Power.Modifier.Favors"}}</span>
+        <select name="modifiers.edges" data-dtype="Number">
+          {{selectOptions modChoices selected=modifiers.edges}}
+        </select>
+      </label>
+      <label>
+        <span>{{localize "VAGABOND.Roll.Power.Modifier.Hinders"}}</span>
+        <select name="modifiers.banes" data-dtype="Number">
+          {{selectOptions modChoices selected=modifiers.banes}}
+        </select>
+      </label>
+      <label>
+        <span>{{localize "VAGABOND.Roll.Power.Modifier.Bonuses"}}</span>
+        {{numberInput modifiers.bonuses name="modifiers.bonuses" step=1}}
+      </label>
+    </div>
+  </div>
+  {{#each targets as |target|}}
+  <div class="target group">
+    <div class="header">{{target.actor.name}}</div>
+    <div class="modifiers">
+      <label>
+        <span>{{localize "VAGABOND.Roll.Power.Modifier.Favors"}}</span>
+        <select name="targets.{{@index}}.modifiers.edges" data-dtype="Number">
+          {{selectOptions @root.modChoices selected=target.modifiers.edges}}
+        </select>
+        <span class="total-edges">{{localize "VAGABOND.Roll.Power.Prompt.Total" number=target.combinedModifiers.edges}}</span>
+      </label>
+      <label>
+        <span>{{localize "VAGABOND.Roll.Power.Modifier.Hinders"}}</span>
+        <select name="targets.{{@index}}.modifiers.banes" data-dtype="Number">
+          {{selectOptions @root.modChoices selected=target.modifiers.banes}}
+        </select>
+        <span class="total-banes">{{localize "VAGABOND.Roll.Power.Prompt.Total" number=target.combinedModifiers.banes}}</span>
+      </label>
+      <label>
+        <span>{{localize "VAGABOND.Roll.Power.Modifier.Bonuses"}}</span>
+        {{numberInput target.modifiers.bonuses name=(concat "targets." @index ".modifiers.bonuses") step=1}}
+        <span class="total-bonuses">{{localize "VAGABOND.Roll.Power.Prompt.Total" number=target.combinedModifiers.bonuses}}</span>
+      </label>
+    </div>
+  </div>
+  {{/each}}
+  {{#if skillOptions}}
+  <label>
+    <span>{{localize "VAGABOND.Actor.Character.FIELDS.hero.skills.label"}}</span>
+    <select name="skill">
+      {{selectOptions skillOptions blank=(localize "None") selected=skill}}
+    </select>
+  </label>
+  {{/if}}
+  {{#if damageOptions}}
+  <div class="form-group">
+    <label for="damage-selection">{{localize "VAGABOND.Roll.Power.Prompt.DamageSelectionLabel"}}</label>
+    <div class="form-fields">
+      <select name="damage-selection" id="damage-selection">
+        {{selectOptions damageOptions selected=damage}}
+      </select>
+    </div>
+  </div>
+  {{/if}}
+  <footer class="form-footer">
+    <button type="submit">
+      <i class="fa-solid fa-dice"></i> {{localize "VAGABOND.Roll.Power.Prompt.Button"}}
+    </button>
+    <div class="roll-mode-buttons">
+      {{#each rollModes as |rollMode|}}
+      <button type="button" class="{{ifThen (eq @root.rollMode @key) "selected" ""}}" data-action="setRollMode" data-roll-mode="{{@key}}" data-tooltip="{{rollMode.label}}">
+        <i class="{{rollMode.icon}}"></i>
+      </button>
+      {{/each}}
+    </div>
+  </footer>
+</div>
