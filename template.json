@@ -1,0 +1,30 @@
+{
+    "Actor": {
+        "name": "Hero",
+        "description": "A Hero is a person or entity that performs actions in the system.",
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "The name of the actor."
+            },
+            "Class": {
+                "type": "string",
+                "description": "The role of the actor in the system."
+            }
+        }
+    },
+    "Item": {
+        "name": "Item",
+        "description": "An Item is a thing that can be used or interacted with in the system.",
+        "properties": {
+            "name": {
+                "type": "string",
+                "description": "The name of the item."
+            },
+            "type": {
+                "type": "string",
+                "description": "The type of the item."
+            }
+        }
+    }
+}
