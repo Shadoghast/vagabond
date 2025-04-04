@@ -68,10 +68,10 @@
     "url": "systems/vagabond/assets/anvil-impact.png",
     "thumbnail": "systems/vagabond/assets/anvil-impact.png"
   }],
-  "version": "0.7.0",
+  "version": "0.01.01",
   "compatibility": {
-    "minimum": "12.331",
-    "verified": "13.337"
+    "minimum": "12.1",
+    "verified": "12.331"
   },
   "esmodules": ["vagabond.mjs"],
   "styles": ["css/vagabond.css"],
